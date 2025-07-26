@@ -19,7 +19,7 @@ const projects = [
      title: "Tour Booking",
      description: "Tour Booking Web Page Of Sundarban with reviews and different Packages",
      tech: ["Tech1", "Tech2", "Tech3"],
-     image: "/images/project.png?height=300&width=400&text=Your+Project",
+     image: "/images/project2.png?height=300&width=400&text=Your+Project",
      liveUrl: "https://tinyurl.com/sh9hvxcm",
    },
 ]
