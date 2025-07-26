@@ -5,7 +5,11 @@ import Header from "./components/Header"
 import Footer from "./components/Footer"
 import type React from "react"
 
-const inter = Inter({ subsets: ["latin"] })
+const inter = Inter({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"], // 👈 adjust to your usage
+  display: "swap", // 👈 prevents invisible text while fonts load
+})
 
 export const metadata = {
   title: "Sahil Siddiqui - Web Developer Portfolio",
