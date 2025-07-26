@@ -134,7 +134,7 @@ export default function About() {
             viewport={{ once: true }}
           >
             <motion.h3 className="text-2xl font-bold text-foreground mb-6" whileHover={{ scale: 1.05, x: 10 }}>
-              My AI-Powered Development Journey
+              My Front-End Development Journey
             </motion.h3>
 
             {/* Enhanced Timeline */}
