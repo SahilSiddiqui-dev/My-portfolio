@@ -11,13 +11,13 @@ const timeline = [
   },
   {
     year: "2025",
-    title: "Discovered AI-Powered Development",
-    description: "Integrated V0, Framer, and AI tools into my workflow",
+    title: "Expanded My Frontend Skills",
+    description: "Mastered advanced React and Next.js concepts while building fast, responsive, and dynamic user interfaces.",
   },
   {
     year: "Future",
-    title: "AI + Web3 Innovation",
-    description: "Combining AI tools with blockchain and decentralized tech",
+    title: "Web3 & Blockchain Innovation",
+    description: "Expanding into decentralized technologies by learning smart contracts, blockchain architecture, and full-stack dApp development.",
   },
 ]
 
@@ -207,7 +207,7 @@ export default function About() {
                   ease: "easeInOut",
                 }}
               >
-                "I leverage AI tools to build faster, smarter, and more efficiently than ever before."
+                "I blend creativity with technical precision to deliver fast, responsive, and conversion-ready websites.."
               </motion.p>
 
               {/* Quote decoration */}
@@ -228,7 +228,7 @@ export default function About() {
             </motion.div>
 
             {/* AI Tools Section */}
-            <motion.div
+{/*             <motion.div
               className="mt-8 p-4 bg-muted/30 rounded-lg border border-border/50"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -250,7 +250,7 @@ export default function About() {
                     whileHover={{ scale: 1.1, y: -2 }}
                   >
                     {tool}
-                  </motion.span>
+                  </motion.span> */}
                 ))}
               </div>
             </motion.div>
