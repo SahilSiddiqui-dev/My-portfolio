@@ -30,7 +30,7 @@ export default function Header() {
     >
       <nav className="mx-auto flex max-w-7xl items-center justify-between p-4 lg:px-8">
         <div className="flex lg:flex-1">
-          <Link href="#home" className="text-xl font-bold text-foreground">
+          <Link href="#home" prefetch className="text-xl font-bold text-foreground">
             Sahil<span className="text-primary">.</span>
           </Link>
         </div>
@@ -42,7 +42,7 @@ export default function Header() {
               key={item.name}
               initial={{ opacity: 0, y: -20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
+              transition={{ duration: 0.2, delay: index * 0.05 }}
             >
               <Link
                 href={item.href}
