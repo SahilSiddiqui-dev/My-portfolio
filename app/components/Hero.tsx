@@ -53,7 +53,7 @@ export default function Hero() {
             >
               From Learning to Launch
             </motion.span>
-            <span className="text-foreground">I Build Modern Web Pages Using AI Tools</span>
+            <span className="text-foreground">Front-End Developer Focused on Performance & Aesthetics.</span>
           </h1>
         </motion.div>
 
@@ -67,8 +67,8 @@ export default function Hero() {
           <motion.span className="text-primary font-semibold animate-pulse-glow" whileHover={{ scale: 1.1 }}>
             Sahil Siddiqui
           </motion.span>
-          , a developer who blends AI technology with web expertise to create responsive, animated, and conversion-ready
-          websites using platforms like <span className="text-primary font-medium">Framer</span>,{" "}
+          , A web developer blending modern design principles with powerful technologies like React, Next.js, 
+          and Tailwind CSS to build responsive, animated, and conversion-focused websites. <span className="text-primary font-medium">Framer</span>,{" "}
           <span className="text-primary font-medium">V0</span>, and more.
         </motion.p>
 
@@ -84,7 +84,7 @@ export default function Hero() {
             whileHover={{ scale: 1.03, y: -1 }}
             whileTap={{ scale: 0.97 }}
           >
-            🚀 View My AI-Powered Work
+            🚀 See What I’ve Been Building
             <ArrowRightIcon className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
           </motion.a>
 
