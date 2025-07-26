@@ -227,7 +227,7 @@ export default function About() {
               </motion.div>
             </motion.div>
 
-            {/* AI Tools Section */}
+{/*             AI Tools Section */}
 {/*             <motion.div
               className="mt-8 p-4 bg-muted/30 rounded-lg border border-border/50"
               initial={{ opacity: 0, y: 20 }}
@@ -251,7 +251,7 @@ export default function About() {
                   >
                     {tool}
                   </motion.span> */}
-                ))}
+                // ))}
               </div>
             </motion.div>
           </motion.div>
