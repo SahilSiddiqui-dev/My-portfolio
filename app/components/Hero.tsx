@@ -68,8 +68,7 @@ export default function Hero() {
             Sahil Siddiqui
           </motion.span>
           , A web developer blending modern design principles with powerful technologies like React, Next.js, 
-          and Tailwind CSS to build responsive, animated, and conversion-focused websites. <span className="text-primary font-medium">Framer</span>,{" "}
-          <span className="text-primary font-medium">V0</span>, and more.
+          and Tailwind CSS to build responsive, animated, and conversion-focused websites. 
         </motion.p>
 
         <motion.div
