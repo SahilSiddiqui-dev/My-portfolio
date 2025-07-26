@@ -24,7 +24,7 @@ export default function Header() {
   return (
     <motion.header
       className="fixed top-0 z-50 w-full bg-background/80 backdrop-blur-md border-b border-border/50"
-      initial={{ y: -100 }}
+      initial={false}
       animate={{ y: 0 }}
       transition={{ duration: 0.6 }}
     >
@@ -40,7 +40,7 @@ export default function Header() {
           {navItems.map((item, index) => (
             <motion.div
               key={item.name}
-              initial={{ opacity: 0, y: -20 }}
+              initial={false}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
             >
