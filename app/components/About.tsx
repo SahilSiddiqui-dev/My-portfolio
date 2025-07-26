@@ -227,31 +227,7 @@ export default function About() {
               </motion.div>
             </motion.div>
 
-{/*             AI Tools Section */}
-{/*             <motion.div
-              className="mt-8 p-4 bg-muted/30 rounded-lg border border-border/50"
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.7 }}
-              viewport={{ once: true }}
-            >
-              <h4 className="text-sm font-semibold text-foreground mb-3 flex items-center gap-2">
-                <span className="text-lg">🤖</span> AI Tools I Use
-              </h4>
-              <div className="flex flex-wrap gap-2">
-                {["V0", "Framer", "ChatGPT", "Claude", "GitHub Copilot"].map((tool, index) => (
-                  <motion.span
-                    key={tool}
-                    className="px-3 py-1 bg-primary/10 text-primary text-xs font-medium rounded-full border border-primary/20"
-                    initial={{ opacity: 0, scale: 0.8 }}
-                    whileInView={{ opacity: 1, scale: 1 }}
-                    transition={{ duration: 0.3, delay: index * 0.1 }}
-                    viewport={{ once: true }}
-                    whileHover={{ scale: 1.1, y: -2 }}
-                  >
-                    {tool}
-                  </motion.span> */}
-                // ))}
+
               </div>
             </motion.div>
           </motion.div>
