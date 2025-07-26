@@ -14,14 +14,14 @@ const projects = [
     liveUrl: "https://sahilsiddiqui-dev.github.io/Community-Notice-board-Website/",
   },
   // Add new projects here following the same structure:
-  // {
-  //   id: 2,
-  //   title: "Your Project Name",
-  //   description: "Brief description of your project",
-  //   tech: ["Tech1", "Tech2", "Tech3"],
-  //   image: "/placeholder.svg?height=300&width=400&text=Your+Project",
-  //   liveUrl: "https://your-project-url.com",
-  // },
+   {
+     id: 2,
+     title: "Tour Booking",
+     description: "Tour Booking Web Page Of Sundarban with reviews and different Packages",
+     tech: ["Tech1", "Tech2", "Tech3"],
+     image: "/images/project.png?height=300&width=400&text=Your+Project",
+     liveUrl: "https://tinyurl.com/sh9hvxcm",
+   },
 ]
 
 export default function Projects() {
