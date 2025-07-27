@@ -1,147 +1,65 @@
-"use client"
+import { motion } from "framer-motion";
+import { Button } from "@/components/ui/button"; // Adjust if you're using a different button component
 
-import { motion } from "framer-motion"
-import { ArrowRightIcon, EnvelopeIcon } from "@heroicons/react/24/outline"
+const Hero = () => {
+  const container = {
+    hidden: { opacity: 0, y: 30 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.6,
+        ease: "easeOut",
+      },
+    },
+  };
 
-const fadeUp = {
-  hidden: { opacity: 0, y: 20 },
-  visible: {
-    opacity: 1,
-    y: 0,
-    transition: { duration: 0.6, ease: "easeOut" },
-  },
-}
-
-export default function Hero() {
   return (
-    <motion.section
-      id="home"
-      className="relative min-h-screen flex items-center justify-center overflow-hidden transform-gpu"
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ duration: 0.5, ease: "easeOut" }}
-    >
-      {/* Background Layers */}
-      <div className="absolute inset-0 -z-10">
-        <div className="absolute inset-0 bg-gradient-to-br from-purple-900/20 via-blue-900/20 to-teal-900/20 dark:from-purple-900/40 dark:via-blue-900/40 dark:to-teal-900/40" />
-
-        {/* Blobs */}
-        <motion.div
-          className="absolute top-1/4 left-1/4 w-48 h-48 bg-gradient-to-r from-purple-500/30 to-pink-500/30 blur-2xl rounded-full"
-          animate={{ x: [0, 30, 0], y: [0, -30, 0], scale: [1, 1.05, 1] }}
-          transition={{ duration: 12, repeat: Infinity, ease: "easeInOut" }}
-        />
-        <motion.div
-          className="absolute top-3/4 right-1/4 w-56 h-56 bg-gradient-to-r from-blue-500/30 to-teal-500/30 blur-2xl rounded-full"
-          animate={{ x: [0, -50, 0], y: [0, 40, 0], scale: [1, 0.95, 1] }}
-          transition={{ duration: 14, repeat: Infinity, ease: "easeInOut" }}
-        />
-        <motion.div
-          className="absolute top-10 right-10 w-28 h-28 bg-gradient-to-r from-yellow-500/30 to-orange-500/30 rounded-full blur-xl"
-          animate={{
-            x: [0, -30, 30, 0],
-            y: [0, 20, -20, 0],
-            scale: [1, 1.1, 0.9, 1],
-          }}
-          transition={{ duration: 10, repeat: Infinity, ease: "easeInOut" }}
-        />
-      </div>
-
-      {/* Hero Content */}
+    <section className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center pt-20 pb-12">
       <motion.div
-        className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center"
+        variants={container}
         initial="hidden"
         animate="visible"
-        variants={{
-          visible: {
-            transition: { staggerChildren: 0.2 },
-          },
-          hidden: {},
-        }}
       >
-        <motion.h1
-          className="text-3xl sm:text-5xl lg:text-6xl font-bold mb-6"
-          variants={fadeUp}
-        >
+        <h1 className="text-3xl sm:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
           <motion.span
             className="text-glow-rainbow animate-text-glow block mb-2"
             animate={{ scale: [1, 1.01, 1] }}
-            transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
+            transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
           >
             From Learning to Launch
           </motion.span>
           <span className="text-foreground">
             Front-End Developer Focused on Performance & Aesthetics.
           </span>
-        </motion.h1>
+        </h1>
 
-        <motion.p
-          className="text-xl sm:text-2xl text-muted-foreground mb-8 max-w-4xl mx-auto"
-          variants={fadeUp}
-        >
+        <p className="text-xl sm:text-2xl text-muted-foreground mb-8 max-w-4xl mx-auto">
           I'm{" "}
           <motion.span
-            className="text-primary font-semibold animate-pulse-glow inline-block"
-            whileHover={{ scale: 1.05 }}
-            transition={{ type: "spring", stiffness: 200 }}
+            className="text-primary font-semibold"
+            whileHover={{ scale: 1.1 }}
+            transition={{ type: "spring", stiffness: 300 }}
           >
             Sahil Siddiqui
           </motion.span>
-          , a web developer blending modern design principles with powerful
-          technologies like React, Next.js, and Tailwind CSS to build
-          responsive, animated, and conversion-focused websites.
-        </motion.p>
-      </motion.div>
+          , a web developer blending modern design principles with powerful technologies like React, Next.js, 
+          and Tailwind CSS to build responsive, animated, and conversion-focused websites.
+        </p>
 
-      {/* CTA Buttons */}
-      <motion.div
-        className="flex flex-col sm:flex-row gap-4 justify-center items-center mt-4"
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6 }}
-      >
-        <motion.a
-          href="#projects"
-          className="group inline-flex items-center px-8 py-4 bg-gradient-to-r from-purple-500 to-pink-500 text-white font-semibold rounded-full hover:from-purple-600 hover:to-pink-600 transition-all duration-300 shadow-lg hover:shadow-xl"
-          whileHover={{ scale: 1.03, y: -1 }}
-          whileTap={{ scale: 0.97 }}
+        {/* CTA Button */}
+        <motion.div
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.5, duration: 0.6 }}
         >
-          🚀 See What I’ve Been Building
-          <ArrowRightIcon className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
-        </motion.a>
-
-        <motion.a
-          href="#contact"
-          className="group inline-flex items-center px-8 py-4 border-2 border-primary text-primary font-semibold rounded-full hover:bg-primary hover:text-white transition-all duration-300"
-          whileHover={{ scale: 1.05, y: -2 }}
-          whileTap={{ scale: 0.95 }}
-        >
-          <EnvelopeIcon className="mr-2 h-5 w-5 animate-float" /> 🤖 Let's Build
-          Together
-        </motion.a>
+          <Button size="lg" className="px-8 py-4 text-lg">
+            🚀 See What I’ve Been Building
+          </Button>
+        </motion.div>
       </motion.div>
+    </section>
+  );
+};
 
-      {/* Floating Circles */}
-      <motion.div
-        className="absolute top-20 left-10 w-3 h-3 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full opacity-60"
-        animate={{ y: [0, -8, 0], opacity: [0.6, 0.9, 0.6] }}
-        transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
-      />
-      <motion.div
-        className="absolute bottom-20 right-10 w-5 h-5 bg-gradient-to-r from-teal-500 to-blue-500 rounded-full opacity-60"
-        animate={{ y: [0, 12, 0], opacity: [0.6, 0.9, 0.6] }}
-        transition={{ duration: 7, repeat: Infinity, ease: "easeInOut" }}
-      />
-      <motion.div
-        className="absolute top-1/3 right-20 w-4 h-4 bg-gradient-to-r from-yellow-500 to-orange-500 rounded-full opacity-70"
-        animate={{
-          y: [0, -12, 12, 0],
-          x: [0, 12, -12, 0],
-          scale: [1, 1.2, 0.9, 1],
-          rotate: [0, 90, 180, 270, 360],
-        }}
-        transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
-      />
-    </motion.section>
-  )
-}
+export default Hero;
