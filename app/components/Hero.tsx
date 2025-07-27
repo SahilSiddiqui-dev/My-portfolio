@@ -39,37 +39,55 @@ export default function Hero() {
       </div>
 
       {/* Main Content */}
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-        >
-          <h1 className="text-3xl sm:text-5xl lg:text-6xl font-bold mb-6">
-            <motion.span
-              className="text-glow-rainbow animate-text-glow block mb-2"
-              animate={{ scale: [1, 1.005, 1] }}
-              transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
-            >
-              From Learning to Launch
-            </motion.span>
-            <span className="text-foreground">Front-End Developer Focused on Performance & Aesthetics.</span>
-          </h1>
-        </motion.div>
+      <motion.div
+  className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center"
+  initial="hidden"
+  animate="visible"
+  variants={{
+    visible: {
+      transition: {
+        staggerChildren: 0.2, // smooth stagger between elements
+      },
+    },
+    hidden: {},
+  }}
+>
+  {/* Main Heading Block */}
+  <motion.h1
+    className="text-3xl sm:text-5xl lg:text-6xl font-bold mb-6"
+    variants={fadeUp}
+  >
+    <motion.span
+      className="text-glow-rainbow animate-text-glow block mb-2"
+      animate={{ scale: [1, 1.01, 1] }}
+      transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
+    >
+      From Learning to Launch
+    </motion.span>
+    <span className="text-foreground">
+      Front-End Developer Focused on Performance & Aesthetics.
+    </span>
+  </motion.h1>
 
-        <motion.p
-          className="text-xl sm:text-2xl text-muted-foreground mb-8 max-w-4xl mx-auto"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-        >
-          I'm{" "}
-          <motion.span className="text-primary font-semibold animate-pulse-glow" whileHover={{ scale: 1.1 }}>
-            Sahil Siddiqui
-          </motion.span>
-          , A web developer blending modern design principles with powerful technologies like React, Next.js, 
-          and Tailwind CSS to build responsive, animated, and conversion-focused websites. 
-        </motion.p>
+  {/* Subtext Block */}
+  <motion.p
+    className="text-xl sm:text-2xl text-muted-foreground mb-8 max-w-4xl mx-auto"
+    variants={fadeUp}
+  >
+    I'm{" "}
+    <motion.span
+      className="text-primary font-semibold animate-pulse-glow inline-block"
+      whileHover={{ scale: 1.05 }}
+      transition={{ type: "spring", stiffness: 200 }}
+    >
+      Sahil Siddiqui
+    </motion.span>
+    , A web developer blending modern design principles with powerful
+    technologies like React, Next.js, and Tailwind CSS to build responsive,
+    animated, and conversion-focused websites.
+  </motion.p>
+</motion.div>
+
 
         <motion.div
           className="flex flex-col sm:flex-row gap-4 justify-center items-center"
