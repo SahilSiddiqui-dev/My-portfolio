@@ -79,7 +79,7 @@ export default function About() {
                   <div className="relative">
                     <div className="glow-border">
                       <Image
-                        src="/images/sahil-profile.png"
+                        src="/images/Profile.webp"
                         alt="Sahil Siddiqui - Web Developer"
                         width={200}
                         height={200}
