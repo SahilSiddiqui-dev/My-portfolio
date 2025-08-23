@@ -8,15 +8,48 @@ import type React from "react"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata = {
-  title: "Sahil Siddiqui Developer Portfolio",
+   title: "Sahil Siddiqui | Web Developer Portfolio",
   description:
-    "Passionate web developer building fast, animated, and user-friendly websites. Available for freelance projects on Fiverr and Upwork.",
-  keywords: "web developer, freelance, HTML, CSS, JavaScript, React, portfolio, Sahil Siddiqui",
+    "Explore the portfolio of Sahil Siddiqui — a passionate web developer building fast, modern, and user-friendly websites with React, Next.js, and Web3. Available for freelance projects on Fiverr and Upwork.",
+  keywords: [
+    "Sahil Siddiqui",
+    "web developer",
+    "React developer",
+    "Next.js portfolio",
+    "freelance web developer",
+    "frontend developer",
+    "JavaScript developer",
+    "Upwork developer",
+    "Fiverr developer"
+  ],
+  authors: [{ name: "Sahil Siddiqui" }],
   openGraph: {
-    title: "Sahil Siddiqui Developer Portfolio",
-    description: "From Learning to Launch – I Build Real Web Experiences",
+    title: "Sahil Siddiqui | Web Developer Portfolio",
+    description:
+      "From learning to launching — I build real web experiences using React, Next.js, and Web3.",
+    url: "https://sahilsiddiqui.site",
+    siteName: "Sahil Siddiqui Portfolio",
+    images: [
+      {
+        url: "https://sahilsiddiqui.site/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Sahil Siddiqui Portfolio Preview",
+      },
+    ],
+    locale: "en_US",
     type: "website",
   },
+  twitter: {
+    card: "summary_large_image",
+    title: "Sahil Siddiqui | Web Developer Portfolio",
+    description:
+      "Portfolio of Sahil Siddiqui — React & Next.js Developer | Available for freelance projects.",
+    images: ["https://sahilsiddiqui.site/og-image.jpg"],
+    creator: "@yourtwitter", // add later if you have one
+  },
+  metadataBase: new URL("https://sahilsiddiqui.site"),
+}
     
 }
 
