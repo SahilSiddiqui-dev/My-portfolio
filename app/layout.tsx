@@ -11,9 +11,9 @@ export const metadata = {
      title: "Sahil Siddiqui | Developer Portfolio",
   description:
     "Passionate web developer building fast, animated, and user-friendly websites. Available for freelance projects on Fiverr and Upwork.",
-  keywords: "web developer, freelance, HTML, CSS, JavaScript, React, portfolio, Sahil Siddiqui",
+  keywords: "web developer, freelance, HTML, CSS, JavaScript, React, developer portfolio, Sahil Siddiqui Developer, freelance developer, portfolio",
   openGraph: {
-    title: "Sahil Siddiqui | Developer Portfolio",
+    title: "Passionate web developer building fast, animated, and user-friendly websites. Available for freelance projects on Fiverr and Upwork.",
     description: "From Learning to Launch – I Build Real Web Experiences",
     type: "website",
   }, 
