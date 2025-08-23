@@ -8,22 +8,13 @@ import type React from "react"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata = {
-    title: "Sahil Siddiqui | Developer Portfolio",
+     title: "Sahil Siddiqui | Developer Portfolio",
   description:
     "Passionate web developer building fast, animated, and user-friendly websites. Available for freelance projects on Fiverr and Upwork.",
-  keywords: Sahil Siddiqui,
-    web developer,
-    React developer,
-    Next portfolio,
-    freelance web developer,
-    frontend developer,
-    JavaScript developer,
-    Upwork developer,
-    Fiverr developer,
-  
+  keywords: "web developer, freelance, HTML, CSS, JavaScript, React, portfolio, Sahil Siddiqui",
   openGraph: {
     title: "Sahil Siddiqui | Developer Portfolio",
-    description: "Passionate web developer building fast, animated, and user-friendly websites. Available for freelance projects on Fiverr and Upwork.",
+    description: "From Learning to Launch – I Build Real Web Experiences",
     type: "website",
   }, 
 }
