@@ -22,7 +22,7 @@ const projects = [
     title: "Community Notice Board",
     description: "College/community web app for sharing announcements and events",
     problem: "This is the Project of a students who needed a centralized place to view colony announcements, Buy/Sell/Rent and events",
-    tech: ["HTML5", "CSS3", "JavaScript", "Local Storage"],
+    tech: ["HTML", "CSS", "JavaScript", "Local Storage"],
     category: "College",
     image: "/images/project1.webp",
     liveDemo: "https://sahilsiddiqui-dev.github.io/Community-Notice-board-Website/",
