@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 const skills = [
   { name: "HTML", icon: "✅", color: "from-orange-500 to-red-500" },
-  { name: "CSS3", icon: "🎨", color: "from-blue-500 to-cyan-500" },
+  { name: "CSS", icon: "🎨", color: "from-blue-500 to-cyan-500" },
   { name: "JavaScript", icon: "⚙️", color: "from-yellow-500 to-orange-500" },
   { name: "TailwindCSS", icon: "🌪️", color: "from-teal-500 to-blue-500" },
   { name: "GitHub", icon: "🐱", color: "from-gray-500 to-gray-700" },
